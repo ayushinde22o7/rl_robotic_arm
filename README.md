@@ -2,13 +2,22 @@
 
 **A from-scratch PyTorch implementation and empirical ablation suite evaluating two-timescale stochastic approximation, normalization heuristics, trust-region clipping, and orthogonal initialization for Proximal Policy Optimization (PPO) on the 7-DoF MuJoCo `Pusher-v5` robotic manipulation task.**
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/PyTorch-2.x-EE4C2C?logo=pytorch&logoColor=white" alt="PyTorch">
-  <img src="https://img.shields.io/badge/Gymnasium-MuJoCo-0081A5" alt="Gymnasium MuJoCo">
-  <img src="https://img.shields.io/badge/Algorithm-Two--Timescale_PPO-8A2BE2" alt="Two-Timescale PPO">
-  <img src="https://img.shields.io/badge/License-MIT-green" alt="MIT License">
-</p>
+<table width="100%">
+  <tr>
+    <td align="center" width="33.3%">
+      <img src="demo_reward_norm.gif" alt="Reward-Normalized PPO" width="100%"><br>
+      <sub><b>Reward-Normalized PPO</b></sub>
+    </td>
+    <td align="center" width="33.3%">
+      <img src="demo_baseline.gif" alt="Baseline PPO" width="100%"><br>
+      <sub><b>Baseline PPO</b></sub>
+    </td>
+    <td align="center" width="33.3%">
+      <img src="demo_two_timescale.gif" alt="Two-Timescale PPO" width="100%"><br>
+      <sub><b>Two-Timescale PPO</b></sub>
+    </td>
+  </tr>
+</table>
 
 <p align="center">
   <img src="pusher_demo.gif" alt="Trained Pusher-v5 rollouts: Reward Norm PPO, Baseline PPO, and Two-Timescale PPO" width="840"><br>
