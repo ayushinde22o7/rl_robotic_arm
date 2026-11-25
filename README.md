@@ -11,7 +11,8 @@
 </p>
 
 <p align="center">
-  <img src="pusher_demo.gif" alt="Trained Pusher-v5 robotic arm pushing cylinder to target" width="480">
+  <img src="pusher_demo.gif" alt="Trained Pusher-v5 rollouts: Reward Norm PPO, Baseline PPO, and Two-Timescale PPO" width="840"><br>
+  <sub><b>Left:</b> Reward-Normalized PPO &nbsp;|&nbsp; <b>Center:</b> Baseline PPO &nbsp;|&nbsp; <b>Right:</b> Two-Timescale PPO</sub>
 </p>
 
 ## Table of Contents
