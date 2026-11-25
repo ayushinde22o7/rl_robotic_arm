@@ -11,7 +11,11 @@
 </p>
 
 <p align="center">
-  <img src="pusher_demo.gif" alt="Trained Pusher-v5 rollouts: Reward Norm PPO, Baseline PPO, and Two-Timescale PPO" width="840"><br>
+  <img src="demo_reward_norm.gif" alt="Reward-Normalized PPO" width="32%">
+  &nbsp;
+  <img src="demo_baseline.gif" alt="Baseline PPO" width="32%">
+  &nbsp;
+  <img src="demo_two_timescale.gif" alt="Two-Timescale PPO" width="32%"><br>
   <sub><b>Left:</b> Reward-Normalized PPO &nbsp;|&nbsp; <b>Center:</b> Baseline PPO &nbsp;|&nbsp; <b>Right:</b> Two-Timescale PPO</sub>
 </p>
 
