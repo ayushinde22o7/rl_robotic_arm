@@ -87,7 +87,8 @@ Both networks are implemented from scratch in PyTorch as separate multi-layer pe
 ### Core Update Equations
 Rollouts of length $N$ are collected using a diagonal Gaussian policy $a_t \sim \mathcal{N}(\mu_\theta(s_t), \text{diag}(\sigma^2))$. Unclipped actions are retained to compute exact log-probabilities $\log \pi_\theta(a_t \mid s_t)$, while clipped copies $\text{clip}(a_t, -2, 2)$ are passed to MuJoCo.
 
-**Generalized Advantage Estimation (GAE-$\lambda$)** with terminal vs. truncation separation:
+**Generalized Advantage Estimation (GAE-λ)** with terminal vs. truncation separation:
+
 
 ```math
 \delta_t = r_t + \gamma\, V_\psi(s_{t+1})\,(1 - \text{terminated}_t) - V_\psi(s_t)
