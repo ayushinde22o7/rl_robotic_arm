@@ -96,7 +96,8 @@ Rollouts of length $N$ are collected using a diagonal Gaussian policy $a_t \sim 
 \hat{A}_t = \delta_t + \gamma \lambda\, (1 - \text{done}_t)\, \hat{A}_{t+1}
 ```
 
-**Clipped Surrogate & Value Objectives** (with probability ratio $r_t(\theta) = \exp(\log \pi_\theta(a_t \mid s_t) - \log \pi_{\theta_{\text{old}}}(a_t \mid s_t))$):
+**Clipped Surrogate & Value Objectives** (with probability ratio $`r_t(\theta) = \exp(\log \pi_\theta(a_t \mid s_t) - \log \pi_{\theta_{\text{old}}}(a_t \mid s_t))`$):
+
 
 ```math
 \mathcal{L}^{\text{actor}}(\theta) = -\,\mathbb{E}_t\Big[\min\big(r_t(\theta)\hat{A}_t,\ \text{clip}(r_t(\theta),\, 1-\epsilon,\, 1+\epsilon)\hat{A}_t\big)\Big] \;-\; c_{\text{ent}}\,\mathcal{H}[\pi_\theta(\cdot \mid s_t)]
